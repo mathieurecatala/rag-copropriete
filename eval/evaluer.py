@@ -14,12 +14,13 @@ Les modes (hybride avec reclasseur, hybride sans reclasseur, vecteurs seuls, ple
 justifier la fusion et le reclasseur.
 
 Prérequis : base remplie (ingestion faite). Usage :
-    python eval/evaluer.py                  # les deux jeux, rapport et README mis à jour
+    python eval/evaluer.py                  # les deux jeux et le rapport
     python eval/evaluer.py --sans-readme    # sans réécrire le README
     python eval/evaluer.py --jeux controle  # un seul jeu
     python eval/evaluer.py --ingerer        # charge d'abord le corpus (idempotent) : une seule commande
     python eval/evaluer.py --comparer       # échoue si un chiffre recule par rapport aux résultats commités (CI)
-Écrit eval/resultats/<jeu>.json et eval/resultats/rapport.md, et met à jour la section « Évaluation » du README.
+Écrit eval/resultats/<jeu>.json et eval/resultats/rapport.md. Sans --sans-readme, recopie aussi un résumé dans le
+README s'il contient les balises EVAL:DEBUT et EVAL:FIN (elles n'y sont plus : le détail est dans NOTES_TECHNIQUES.md).
 """
 
 import argparse
