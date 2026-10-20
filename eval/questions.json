@@ -1,0 +1,208 @@
+{
+ "note": "Questions écrites pour ce projet, formulées comme un copropriétaire ou un syndic les poserait (sans reprendre les mots des articles). Article attendu vérifié dans le texte consolidé ; plusieurs articles acceptés quand ils répondent tous.",
+ "questions": [
+  {
+   "question": "Quelle majorité faut-il en assemblée générale pour changer de syndic ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25"
+    }
+   ]
+  },
+  {
+   "question": "Combien de temps avant l'assemblée générale les convocations doivent-elles être envoyées ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "9"
+    }
+   ]
+  },
+  {
+   "question": "Un copropriétaire qui a voté contre une résolution peut-il la contester en justice, et dans quel délai ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "42"
+    }
+   ]
+  },
+  {
+   "question": "Je veux poser une fenêtre de toit dans mon lot, ce qui touche la toiture : faut-il l'accord de l'assemblée ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25"
+    }
+   ]
+  },
+  {
+   "question": "Comment sont réparties les charges d'ascenseur entre les copropriétaires ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "10"
+    }
+   ]
+  },
+  {
+   "question": "Des copropriétaires peuvent-ils obliger le syndic à convoquer une assemblée générale ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "8"
+    }
+   ]
+  },
+  {
+   "question": "Quel est le rôle du conseil syndical ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "21"
+    }
+   ]
+  },
+  {
+   "question": "Pour combien d'années au maximum un syndic peut-il être nommé ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "28"
+    }
+   ]
+  },
+  {
+   "question": "La copropriété est-elle obligée de mettre de l'argent de côté chaque année pour les futurs travaux ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "14-2-1"
+    }
+   ]
+  },
+  {
+   "question": "Qui vote le budget prévisionnel de la copropriété, et à quel moment ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "14-1"
+    }
+   ]
+  },
+  {
+   "question": "Peut-on voter sans venir à l'assemblée générale, par exemple en envoyant son vote à l'avance ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "17-1 A"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "9 bis"
+    }
+   ]
+  },
+  {
+   "question": "Combien de pouvoirs un même copropriétaire peut-il recevoir pour voter à la place des absents ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "22"
+    }
+   ]
+  },
+  {
+   "question": "Quelle majorité faut-il pour modifier le règlement de copropriété ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "26"
+    }
+   ]
+  },
+  {
+   "question": "À partir de quand court le délai pour contester une décision d'assemblée générale ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "18"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "42"
+    }
+   ]
+  },
+  {
+   "question": "Un copropriétaire peut-il utiliser son appartement comme il l'entend ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "9"
+    }
+   ]
+  },
+  {
+   "question": "Qu'est-ce qui fait partie des parties communes d'un immeuble ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "3"
+    }
+   ]
+  },
+  {
+   "question": "Que peut faire le syndic quand un copropriétaire ne paie pas ses charges ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "19-2"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "19"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic doit-il ouvrir un compte bancaire au nom du syndicat des copropriétaires ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "18"
+    }
+   ]
+  },
+  {
+   "question": "Comment faire ajouter une question à l'ordre du jour de la prochaine assemblée ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "10"
+    }
+   ]
+  },
+  {
+   "question": "Quelles règles simplifiées s'appliquent aux petites copropriétés ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "41-8"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "41-9"
+    }
+   ]
+  }
+ ],
+ "hors_sujet": [
+  "Quelle est la recette de la tarte aux pommes ?",
+  "Comment déclarer mes revenus fonciers aux impôts ?",
+  "Quel est le délai de préavis d'un locataire qui quitte son logement en zone tendue ?",
+  "Comment obtenir un permis de construire pour une maison individuelle ?",
+  "Combien de jours de congés payés a un salarié à temps plein ?"
+ ]
+}

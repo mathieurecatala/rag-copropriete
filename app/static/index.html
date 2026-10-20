@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Textes de la copropriété</title>
+<style>
+  :root {
+    --fond: #f6f5f2; --carte: #ffffff; --texte: #1d1d1b; --doux: #5d5d58; --trait: #e2e0da;
+    --accent: #1f4e79; --accent-doux: #e8eef5; --alerte: #8a5a00; --alerte-fond: #fff6e0;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte);
+         font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .sous-titre { color: var(--doux); margin: 0 0 20px; }
+  .avertissement { font-size: .9rem; color: var(--doux); border-left: 3px solid var(--trait);
+                   padding: 4px 12px; margin: 0 0 24px; }
+  form { display: flex; gap: 8px; flex-wrap: wrap; }
+  textarea { flex: 1 1 100%; min-height: 84px; padding: 12px; font: inherit; border: 1px solid var(--trait);
+             border-radius: 8px; background: var(--carte); resize: vertical; }
+  button { font: inherit; padding: 10px 20px; border: 0; border-radius: 8px; background: var(--accent);
+           color: #fff; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: wait; }
+  .exemples { margin: 12px 0 0; font-size: .9rem; color: var(--doux); }
+  .exemples a { color: var(--accent); cursor: pointer; text-decoration: underline dotted; margin-right: 12px; }
+  .bloc { background: var(--carte); border: 1px solid var(--trait); border-radius: 10px; padding: 16px 20px;
+          margin-top: 24px; }
+  .reponse { white-space: pre-wrap; }
+  .inconnu { background: var(--alerte-fond); border-color: #ecd9a8; color: var(--alerte); }
+  h2 { font-size: 1.05rem; margin: 28px 0 8px; }
+  .passage { background: var(--carte); border: 1px solid var(--trait); border-radius: 10px;
+             padding: 14px 18px; margin: 10px 0; }
+  .passage header { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .passage a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .passage a:hover { text-decoration: underline; }
+  .chemin { color: var(--doux); font-size: .85rem; margin: 2px 0 8px; }
+  .score { color: var(--doux); font-size: .8rem; font-variant-numeric: tabular-nums; }
+  .contenu { white-space: pre-wrap; font-size: .95rem; }
+  .etat { color: var(--doux); font-size: .85rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Textes de la copropriété</h1>
+  <p class="sous-titre">Questions de copropriété, réponses tirées de la loi du 10 juillet 1965 et du décret du
+    17 mars 1967, avec l'article exact.</p>
+  <p class="avertissement">Ceci n'est pas un conseil juridique : l'outil cite les textes officiels (versions
+    consolidées, Légifrance), il ne certifie rien. Vérifiez toujours l'article cité.</p>
+
+  <form id="formulaire">
+    <textarea id="question" placeholder="Ex. : Un copropriétaire peut-il contester une décision de l'assemblée générale ?" required></textarea>
+    <button id="envoyer" type="submit">Chercher dans les textes</button>
+  </form>
+  <p class="exemples">Exemples :
+    <a data-q="Dans quel délai la convocation à l'assemblée générale doit-elle être notifiée ?">délai de convocation</a>
+    <a data-q="Quelle est la durée maximale du mandat du syndic ?">durée du mandat du syndic</a>
+    <a data-q="La copropriété doit-elle constituer un fonds de travaux ?">fonds de travaux</a>
+    <a data-q="Que dit l'article 26 de la loi de 1965 ?">article 26 de la loi</a>
+  </p>
+
+  <div id="resultat"></div>
+  <p class="etat" id="etat"></p>
+</main>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const echapper = (s) => String(s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  function afficher(d) {
+    let html = "";
+    if (d.je_ne_sais_pas) {
+      html += `<div class="bloc inconnu"><strong>Je ne sais pas.</strong> Les textes du corpus ne semblent pas
+        répondre à cette question (meilleure proximité ${d.meilleure_similarite.toFixed(3)}, seuil ${d.seuil}).
+        Les passages les plus proches sont listés ci-dessous, à titre indicatif.</div>`;
+    } else if (d.reponse) {
+      html += `<div class="bloc reponse">${echapper(d.reponse)}</div>`;
+    }
+    html += `<h2>${d.je_ne_sais_pas ? "Passages les plus proches" : "Articles trouvés"}</h2>`;
+    for (const p of d.passages) {
+      html += `<article class="passage">
+        <header><a href="${echapper(p.url)}" target="_blank" rel="noopener">${echapper(p.texte_titre)},
+          ${p.article_num.startsWith("Annexe") ? "" : "article "}${echapper(p.article_num)}</a>
+          <span class="score">${p.cite_dans_la_question ? "article cité dans la question" :
+            `proximité ${p.similarite.toFixed(3)} · score ${p.score.toFixed(4)}` +
+            (p.pertinence === null ? "" : ` · pertinence ${p.pertinence.toFixed(2)}`)}</span></header>
+        <div class="chemin">${echapper(p.chemin)}</div>
+        <div class="contenu">${echapper(p.contenu)}</div></article>`;
+    }
+    $("resultat").innerHTML = html;
+  }
+
+  $("formulaire").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const question = $("question").value.trim();
+    if (question.length < 3) return;
+    $("envoyer").disabled = true;
+    $("resultat").innerHTML = '<div class="bloc">Recherche en cours…</div>';
+    try {
+      const r = await fetch("/question", { method: "POST", headers: { "content-type": "application/json" },
+                                            body: JSON.stringify({ question }) });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.detail || r.statusText);
+      afficher(d);
+    } catch (err) {
+      $("resultat").innerHTML = `<div class="bloc inconnu">Erreur : ${echapper(err.message)}</div>`;
+    } finally {
+      $("envoyer").disabled = false;
+    }
+  });
+
+  document.querySelectorAll(".exemples a").forEach((a) => a.addEventListener("click", () => {
+    $("question").value = a.dataset.q;
+    $("formulaire").requestSubmit();
+  }));
+
+  fetch("/sante").then((r) => r.json()).then((s) => {
+    $("etat").textContent = `${s.passages} passages indexés · ingestion : ${s.ingestion} · ` +
+      (s.generation ? `réponse rédigée par ${s.modele_generation}` : "sans clé API : passages seuls");
+  }).catch(() => {});
+</script>
+</body>
+</html>

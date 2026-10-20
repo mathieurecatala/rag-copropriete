@@ -1,0 +1,50 @@
+{
+ "id": "decret-1967",
+ "cid": "JORFTEXT000000305770",
+ "titre": "Décret n°67-223 du 17 mars 1967 pris pour l'application de la loi n° 65-557 du 10 juillet 1965 fixant le statut de la copropriété des immeubles bâtis",
+ "titre_court": "Décret du 17 mars 1967",
+ "url_source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000305770/",
+ "source_donnees": "DILA, base LEGI (https://echanges.dila.gouv.fr/OPENDATA/LEGI/) : Freemium_legi_global_20250713-140000.tar.gz + 455 archives incrémentales jusqu'à LEGI_20261008-213853.tar.gz",
+ "licence": "Licence Ouverte / Open Licence version 2.0 (Etalab)",
+ "date_consolidation": "2026-10-08",
+ "date_telechargement": "2026-10-08",
+ "articles": [
+  {
+   "id": "LEGIARTI000042078628",
+   "num": "7",
+   "chemin": "Section II : Les assemblées générales de copropriétaires.",
+   "etat": "VIGUEUR",
+   "date_debut": "2020-07-04",
+   "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042078628",
+   "texte": "Dans tout syndicat de copropriété, il est tenu, au moins une fois chaque année, une assemblée générale des copropriétaires.\nSauf s'il en est disposé autrement dans la loi du 10 juillet 1965 ou le présent décret, l'assemblée générale est convoquée par le syndic.\nLes dispositions des alinéas précédents ne sont pas applicables lorsque l'administrateur provisoire est investi par le président du tribunal judiciaire, sur le fondement de l'article 62-7, de tous les pouvoirs de l'assemblée générale. Lorsqu'il n'est investi que d'une partie de ces pouvoirs, les dispositions du deuxième alinéa ne s'appliquent que dans la limite des pouvoirs conservés par l'assemblée générale."
+  },
+  {
+   "id": "LEGIARTI000039345709",
+   "num": "8",
+   "chemin": "Section II : Les assemblées générales de copropriétaires.",
+   "etat": "VIGUEUR",
+   "date_debut": "2020-01-01",
+   "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039345709",
+   "texte": "La convocation de l'assemblée est de droit lorsqu'elle est demandée au syndic soit par le conseil syndical, s'il en existe un, soit par un ou plusieurs copropriétaires représentant au moins un quart des voix de tous les copropriétaires, à moins que le règlement de copropriété ne prévoie un nombre inférieur de voix. La demande, qui est notifiée au syndic, précise les questions dont l'inscription à l'ordre du jour de l'assemblée est demandée.\nDans les cas prévus au précédent alinéa, l'assemblée générale des copropriétaires est valablement convoquée par le président du conseil syndical, s'il en existe un, après mise en demeure au syndic restée infructueuse pendant plus de huit jours.\nDans les mêmes cas, s'il n'existe pas de conseil syndical ou si les membres de ce conseil n'ont pas été désignés ou si le président de ce conseil ne procède pas à la convocation de l'assemblée, tout copropriétaire peut alors provoquer ladite convocation dans les conditions prévues à l'article 50 du présent décret.\nLorsque l'assemblée est convoquée en application du présent article, la convocation est notifiée au syndic.\nLes dispositions des alinéas précédents ne sont pas applicables lorsque l'administrateur provisoire est investi par le président du tribunal judiciaire, sur le fondement de l'article 62-7, de tous les pouvoirs de l'assemblée générale. Lorsqu'il n'est investi que d'une partie de ces pouvoirs, les dispositions des alinéas précédents ne s'appliquent que dans la limite des pouvoirs conservés par l'assemblée générale et le conseil syndical."
+  },
+  {
+   "id": "LEGIARTI000042078632",
+   "num": "9",
+   "chemin": "Section II : Les assemblées générales de copropriétaires.",
+   "etat": "VIGUEUR",
+   "date_debut": "2020-07-04",
+   "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042078632",
+   "texte": "La convocation contient l'indication des lieu, date et heure de la réunion, ainsi que l'ordre du jour qui précise chacune des questions soumises à la délibération de l'assemblée. A défaut de stipulation du règlement de copropriété ou de décision de l'assemblée générale, la personne qui convoque l'assemblée fixe le lieu et l'heure de la réunion. La convocation indique le lieu, le ou les jours et les heures de consultation des pièces justificatives des charges.\nLe formulaire de vote par correspondance mentionné au deuxième alinéa de l'article 17-1 A est joint à la convocation.\nSauf urgence, cette convocation est notifiée au moins vingt et un jours avant la date de la réunion, à moins que le règlement de copropriété n'ait prévu un délai plus long. Sans que cette formalité soit prescrite à peine de nullité de l'assemblée générale, le syndic indique, par voie d'affichage, aux copropriétaires, la date de la prochaine assemblée générale et la possibilité qui leur est offerte de solliciter l'inscription d'une ou plusieurs questions à l'ordre du jour. L'affichage, qui reproduit les dispositions de l'article 10, est réalisé dans un délai raisonnable permettant aux copropriétaires de faire inscrire leurs questions à l'ordre du jour.\nSous réserve des stipulations du règlement de copropriété, l'assemblée générale est réunie dans la commune de la situation de l'immeuble."
+  },
+  {
+   "id": "LEGIARTI000042078670",
+   "num": "14",
+   "chemin": "Section II : Les assemblées générales de copropriétaires.",
+   "etat": "VIGUEUR",
+   "date_debut": "2020-07-04",
+   "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042078670",
+   "texte": "Il est tenu une feuille de présence, pouvant comporter plusieurs feuillets, qui indique les nom et domicile de chaque copropriétaire ou associé :\n-présent physiquement ou représenté ;\n-participant à l'assemblée générale par visioconférence, par audioconférence ou par un autre moyen de communication électronique ;\n- ayant voté par correspondance avec mention de la date de réception du formulaire par le syndic.\nDans le cas où le copropriétaire ou l'associé est représenté, la feuille de présence mentionne les nom et domicile du mandataire désigné et précise le cas échéant si ce dernier participe par visioconférence, par audioconférence ou par un autre moyen de communication électronique.\nCette feuille indique pour chaque copropriétaire le nombre de voix dont il dispose, le cas échéant en faisant application des dispositions des deuxième et troisième alinéas du I de l'article 22 et du dernier alinéa de l'article 10 de la loi du 10 juillet 1965.\nElle est émargée par chaque copropriétaire ou associé présent physiquement, ou par son mandataire.\nElle est certifiée exacte par le président de séance désigné par l'assemblée générale.\nElle peut être tenue sous forme électronique dans les conditions définies par les articles 1366 et 1367 du code civil."
+  }
+ ],
+ "note": "Extrait du corpus réel (corpus/donnees) pour les tests ; textes non modifiés."
+}

@@ -1,0 +1,344 @@
+{
+ "seuil": 0.55,
+ "reclasseur": true,
+ "n_questions": 20,
+ "n_hors_sujet": 5,
+ "modes": {
+  "hybride": {
+   "hit@1": 0.6,
+   "hit@3": 0.95,
+   "mrr@10": 0.775
+  },
+  "rrf": {
+   "hit@1": 0.45,
+   "hit@3": 0.8,
+   "mrr@10": 0.635
+  },
+  "vecteur": {
+   "hit@1": 0.55,
+   "hit@3": 0.8,
+   "mrr@10": 0.677
+  },
+  "plein_texte": {
+   "hit@1": 0.45,
+   "hit@3": 0.55,
+   "mrr@10": 0.527
+  }
+ },
+ "detail": [
+  {
+   "question": "Quelle majorité faut-il en assemblée générale pour changer de syndic ?",
+   "attendu": [
+    "loi-1965 art. 25"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 25",
+    "loi-1965 art. 41-11",
+    "loi-1965 art. 21"
+   ],
+   "meilleure_similarite": 0.6132,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Combien de temps avant l'assemblée générale les convocations doivent-elles être envoyées ?",
+   "attendu": [
+    "decret-1967 art. 9"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 9",
+    "decret-1967 art. 9 bis",
+    "decret-1967 art. 8-1"
+   ],
+   "meilleure_similarite": 0.6491,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Un copropriétaire qui a voté contre une résolution peut-il la contester en justice, et dans quel délai ?",
+   "attendu": [
+    "loi-1965 art. 42"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 41-19",
+    "loi-1965 art. 42",
+    "decret-1967 art. 18"
+   ],
+   "meilleure_similarite": 0.6958,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Je veux poser une fenêtre de toit dans mon lot, ce qui touche la toiture : faut-il l'accord de l'assemblée ?",
+   "attendu": [
+    "loi-1965 art. 25"
+   ],
+   "rang": 6,
+   "top3": [
+    "loi-1965 art. 25-2-1",
+    "decret-1967 art. 10-4",
+    "loi-1965 art. 24"
+   ],
+   "meilleure_similarite": 0.6362,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Comment sont réparties les charges d'ascenseur entre les copropriétaires ?",
+   "attendu": [
+    "loi-1965 art. 10"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 11",
+    "loi-1965 art. 10",
+    "decret-1967 art. 1"
+   ],
+   "meilleure_similarite": 0.6248,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Des copropriétaires peuvent-ils obliger le syndic à convoquer une assemblée générale ?",
+   "attendu": [
+    "decret-1967 art. 8"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 17-1 AA",
+    "decret-1967 art. 8",
+    "decret-1967 art. 50"
+   ],
+   "meilleure_similarite": 0.7484,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quel est le rôle du conseil syndical ?",
+   "attendu": [
+    "loi-1965 art. 21"
+   ],
+   "rang": 2,
+   "top3": [
+    "decret-1967 art. 26",
+    "loi-1965 art. 21",
+    "decret-1967 art. 27"
+   ],
+   "meilleure_similarite": 0.6692,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Pour combien d'années au maximum un syndic peut-il être nommé ?",
+   "attendu": [
+    "decret-1967 art. 28"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 28",
+    "loi-1965 art. 29-1",
+    "decret-1967 art. Annexe 1"
+   ],
+   "meilleure_similarite": 0.7117,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "La copropriété est-elle obligée de mettre de l'argent de côté chaque année pour les futurs travaux ?",
+   "attendu": [
+    "loi-1965 art. 14-2-1"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 32",
+    "loi-1965 art. 14-2-1",
+    "loi-1965 art. 33"
+   ],
+   "meilleure_similarite": 0.6529,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qui vote le budget prévisionnel de la copropriété, et à quel moment ?",
+   "attendu": [
+    "loi-1965 art. 14-1"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 14-1",
+    "decret-1967 art. 43",
+    "decret-1967 art. 35"
+   ],
+   "meilleure_similarite": 0.7676,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Peut-on voter sans venir à l'assemblée générale, par exemple en envoyant son vote à l'avance ?",
+   "attendu": [
+    "loi-1965 art. 17-1 A",
+    "decret-1967 art. 9 bis"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 41-17",
+    "loi-1965 art. 17-1 A",
+    "loi-1965 art. 26-4"
+   ],
+   "meilleure_similarite": 0.6131,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Combien de pouvoirs un même copropriétaire peut-il recevoir pour voter à la place des absents ?",
+   "attendu": [
+    "loi-1965 art. 22"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 22",
+    "loi-1965 art. 21-1",
+    "decret-1967 art. 8"
+   ],
+   "meilleure_similarite": 0.6584,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quelle majorité faut-il pour modifier le règlement de copropriété ?",
+   "attendu": [
+    "loi-1965 art. 26"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 26",
+    "loi-1965 art. 41-5",
+    "loi-1965 art. 11"
+   ],
+   "meilleure_similarite": 0.6933,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "À partir de quand court le délai pour contester une décision d'assemblée générale ?",
+   "attendu": [
+    "decret-1967 art. 18",
+    "loi-1965 art. 42"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 18",
+    "loi-1965 art. 42",
+    "loi-1965 art. 41-19"
+   ],
+   "meilleure_similarite": 0.6974,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Un copropriétaire peut-il utiliser son appartement comme il l'entend ?",
+   "attendu": [
+    "loi-1965 art. 9"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 9",
+    "loi-1965 art. 30",
+    "loi-1965 art. 25-2"
+   ],
+   "meilleure_similarite": 0.6549,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qu'est-ce qui fait partie des parties communes d'un immeuble ?",
+   "attendu": [
+    "loi-1965 art. 3"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 3",
+    "loi-1965 art. 6-3",
+    "loi-1965 art. 6-2"
+   ],
+   "meilleure_similarite": 0.6896,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Que peut faire le syndic quand un copropriétaire ne paie pas ses charges ?",
+   "attendu": [
+    "loi-1965 art. 19-2",
+    "loi-1965 art. 19"
+   ],
+   "rang": 3,
+   "top3": [
+    "decret-1967 art. 35",
+    "loi-1965 art. 41-15",
+    "loi-1965 art. 19"
+   ],
+   "meilleure_similarite": 0.7192,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic doit-il ouvrir un compte bancaire au nom du syndicat des copropriétaires ?",
+   "attendu": [
+    "loi-1965 art. 18"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 18",
+    "loi-1965 art. 26-9",
+    "loi-1965 art. 18-2"
+   ],
+   "meilleure_similarite": 0.7736,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Comment faire ajouter une question à l'ordre du jour de la prochaine assemblée ?",
+   "attendu": [
+    "decret-1967 art. 10"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 10",
+    "decret-1967 art. 9",
+    "decret-1967 art. 62-14"
+   ],
+   "meilleure_similarite": 0.5874,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quelles règles simplifiées s'appliquent aux petites copropriétés ?",
+   "attendu": [
+    "loi-1965 art. 41-8",
+    "loi-1965 art. 41-9"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 41-8",
+    "decret-1967 art. 42-3",
+    "loi-1965 art. 41-12"
+   ],
+   "meilleure_similarite": 0.6194,
+   "je_ne_sais_pas": false
+  }
+ ],
+ "secondes_par_question": 3.95,
+ "hors_sujet": [
+  {
+   "question": "Quelle est la recette de la tarte aux pommes ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.3102
+  },
+  {
+   "question": "Comment déclarer mes revenus fonciers aux impôts ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.4968
+  },
+  {
+   "question": "Quel est le délai de préavis d'un locataire qui quitte son logement en zone tendue ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.5207
+  },
+  {
+   "question": "Comment obtenir un permis de construire pour une maison individuelle ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.5128
+  },
+  {
+   "question": "Combien de jours de congés payés a un salarié à temps plein ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.4772
+  }
+ ],
+ "refus_hors_sujet": 1.0,
+ "refus_a_tort": 0.0
+}

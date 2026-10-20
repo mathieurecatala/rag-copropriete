@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Recherche de secrets (gitleaks)
+        run: |
+          docker run --rm -v "$PWD:/depot" ghcr.io/gitleaks/gitleaks:v8.24.3 \
+            git /depot --redact --verbose --exit-code 1
+
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Construction de l'image (poids du modèle en cache)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: rag-copropriete-api:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Démarrage de Postgres + pgvector
+        run: docker compose up -d --wait db
+      - name: Tests dans le conteneur
+        run: docker compose run --rm --no-deps -e INGESTION_AU_DEMARRAGE=0 api pytest -v
+      - name: Démarrage de l'API, ingestion du corpus complet, question de contrôle
+        run: |
+          docker compose up -d --no-build api
+          # Vecteurs précalculés : quelques secondes. Sans eux (fichier périmé), le calcul sur 2 cœurs serait long :
+          # l'attente échoue explicitement après 20 minutes au lieu de laisser l'évaluation tourner sur une base vide.
+          for i in $(seq 1 240); do
+            curl -sf localhost:8000/sante | grep -q '"ingestion":"terminée"' && break
+            curl -sf localhost:8000/sante | grep -q '"ingestion":"échec"' && break
+            sleep 5
+          done
+          curl -sf localhost:8000/sante | tee /tmp/sante.json
+          grep -q '"ingestion":"terminée"' /tmp/sante.json
+          curl -sf -X POST localhost:8000/question -H 'content-type: application/json' \
+            -d '{"question":"Quelle majorité faut-il pour modifier le règlement de copropriété ?","k":3}' | head -c 600
+      - name: Évaluation (jeu de mise au point et jeu de contrôle)
+        # Échoue si un chiffre recule par rapport aux résultats commités (eval/resultats/*.json).
+        run: docker compose exec -T api python eval/evaluer.py --sans-readme --comparer
+      - name: Journaux en cas d'échec
+        if: failure()
+        run: docker compose logs --tail 200

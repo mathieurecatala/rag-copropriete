@@ -1,0 +1,838 @@
+{
+ "seuil": 0.55,
+ "reclasseur": true,
+ "n_questions": 52,
+ "n_hors_sujet": 10,
+ "modes": {
+  "hybride": {
+   "hit@1": 0.692,
+   "hit@3": 0.846,
+   "mrr@10": 0.783
+  },
+  "rrf": {
+   "hit@1": 0.635,
+   "hit@3": 0.885,
+   "mrr@10": 0.764
+  },
+  "vecteur": {
+   "hit@1": 0.731,
+   "hit@3": 0.904,
+   "mrr@10": 0.816
+  },
+  "plein_texte": {
+   "hit@1": 0.346,
+   "hit@3": 0.519,
+   "mrr@10": 0.462
+  }
+ },
+ "detail": [
+  {
+   "question": "Quelles parties de l'immeuble appartiennent à un seul copropriétaire ?",
+   "attendu": [
+    "loi-1965 art. 2"
+   ],
+   "rang": 6,
+   "top3": [
+    "loi-1965 art. 3",
+    "loi-1965 art. 4",
+    "loi-1965 art. 25-2-1"
+   ],
+   "meilleure_similarite": 0.6439,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "À qui appartient la cloison qui sépare mon appartement de celui du voisin ?",
+   "attendu": [
+    "loi-1965 art. 7"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 7",
+    "loi-1965 art. 25-2-1",
+    "loi-1965 art. 26"
+   ],
+   "meilleure_similarite": 0.6111,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic doit-il fournir un document qui résume les chiffres et l'état technique de la copropriété ?",
+   "attendu": [
+    "loi-1965 art. 8-2"
+   ],
+   "rang": 2,
+   "top3": [
+    "decret-1967 art. 33",
+    "loi-1965 art. 8-2",
+    "decret-1967 art. Annexe 1"
+   ],
+   "meilleure_similarite": 0.7497,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Suis-je obligé d'avoir une assurance responsabilité civile quand je loue mon appartement sans y habiter ?",
+   "attendu": [
+    "loi-1965 art. 9-1"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 18",
+    "loi-1965 art. 9-1",
+    "loi-1965 art. 21-4"
+   ],
+   "meilleure_similarite": 0.564,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Je loue mon logement en meublé de tourisme : dois-je prévenir le syndic ?",
+   "attendu": [
+    "loi-1965 art. 9-2"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 9-2",
+    "loi-1965 art. 8-1-1",
+    "decret-1967 art. 35-2"
+   ],
+   "meilleure_similarite": 0.6802,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qui paie les frais de relance et d'huissier quand un copropriétaire est en retard de paiement ?",
+   "attendu": [
+    "loi-1965 art. 10-1"
+   ],
+   "rang": 4,
+   "top3": [
+    "loi-1965 art. 26-12",
+    "loi-1965 art. 26-13",
+    "decret-1967 art. 38"
+   ],
+   "meilleure_similarite": 0.5957,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Peut-on changer la façon dont les charges sont réparties entre les lots ?",
+   "attendu": [
+    "loi-1965 art. 11"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 11",
+    "decret-1967 art. 1",
+    "loi-1965 art. 12"
+   ],
+   "meilleure_similarite": 0.6486,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Ma quote-part de charges me paraît beaucoup trop élevée par rapport à mon lot : puis-je la faire réviser par un juge ?",
+   "attendu": [
+    "loi-1965 art. 12",
+    "decret-1967 art. 52",
+    "decret-1967 art. 53"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 12",
+    "loi-1965 art. 11",
+    "decret-1967 art. 52"
+   ],
+   "meilleure_similarite": 0.6259,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Notre immeuble a vingt ans : faut-il établir un programme de travaux sur plusieurs années ?",
+   "attendu": [
+    "loi-1965 art. 14-2"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 14-2",
+    "loi-1965 art. 14-2-1",
+    "loi-1965 art. 25-2-1"
+   ],
+   "meilleure_similarite": 0.6272,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Je veux faire voter une question qui ne concerne que mon lot sans attendre la prochaine assemblée : est-ce possible ?",
+   "attendu": [
+    "loi-1965 art. 17-1 AA",
+    "decret-1967 art. 8-1"
+   ],
+   "rang": 3,
+   "top3": [
+    "decret-1967 art. 10",
+    "loi-1965 art. 22",
+    "loi-1965 art. 17-1 AA"
+   ],
+   "meilleure_similarite": 0.6074,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Une personne qui n'est pas propriétaire dans l'immeuble peut-elle être syndic bénévole ?",
+   "attendu": [
+    "loi-1965 art. 17-2"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 17-2",
+    "loi-1965 art. 41-6",
+    "decret-1967 art. 28"
+   ],
+   "meilleure_similarite": 0.6108,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Avant l'assemblée qui approuve les comptes, puis-je consulter les factures ?",
+   "attendu": [
+    "loi-1965 art. 18-1",
+    "decret-1967 art. 9-1"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 18-1",
+    "decret-1967 art. 9-1",
+    "decret-1967 art. 11"
+   ],
+   "meilleure_similarite": 0.6095,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic peut-il facturer des honoraires en plus de son forfait annuel ?",
+   "attendu": [
+    "loi-1965 art. 18-1 A",
+    "decret-1967 art. Annexe 2"
+   ],
+   "rang": 6,
+   "top3": [
+    "decret-1967 art. Annexe 1",
+    "loi-1965 art. 21",
+    "loi-1965 art. 8-2"
+   ],
+   "meilleure_similarite": 0.7032,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quand nous changeons de syndic, en combien de temps l'ancien doit-il transmettre les comptes et les archives ?",
+   "attendu": [
+    "loi-1965 art. 18-2",
+    "decret-1967 art. 33-1"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 18-2",
+    "decret-1967 art. 33-1",
+    "decret-1967 art. 33-2"
+   ],
+   "meilleure_similarite": 0.7738,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Lors de la vente d'un appartement, comment le syndic récupère-t-il les charges impayées du vendeur ?",
+   "attendu": [
+    "loi-1965 art. 20",
+    "decret-1967 art. 5-1"
+   ],
+   "rang": 4,
+   "top3": [
+    "decret-1967 art. 5",
+    "loi-1965 art. 26-13",
+    "loi-1965 art. 29-1 A"
+   ],
+   "meilleure_similarite": 0.6491,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "L'assemblée peut-elle confier au conseil syndical le pouvoir de prendre certaines décisions à sa place ?",
+   "attendu": [
+    "loi-1965 art. 21-1",
+    "loi-1965 art. 21-3",
+    "decret-1967 art. 21-1"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 21-1",
+    "loi-1965 art. 41-6",
+    "loi-1965 art. 21-5"
+   ],
+   "meilleure_similarite": 0.6433,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Pour combien de temps une délégation de pouvoirs au conseil syndical est-elle accordée ?",
+   "attendu": [
+    "loi-1965 art. 21-3"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 21-3",
+    "loi-1965 art. 21-1",
+    "decret-1967 art. 21"
+   ],
+   "meilleure_similarite": 0.7329,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quelle majorité suffit pour les décisions ordinaires de l'assemblée générale ?",
+   "attendu": [
+    "loi-1965 art. 24"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 24",
+    "loi-1965 art. 26-3",
+    "loi-1965 art. 21-1"
+   ],
+   "meilleure_similarite": 0.6122,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Comment sont élus les membres du conseil syndical ?",
+   "attendu": [
+    "loi-1965 art. 25"
+   ],
+   "rang": null,
+   "top3": [
+    "loi-1965 art. 17-1",
+    "loi-1965 art. 21",
+    "decret-1967 art. 25"
+   ],
+   "meilleure_similarite": 0.696,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Un copropriétaire peut-il installer à ses frais un climatiseur sur la façade de l'immeuble, et quel vote faut-il ?",
+   "attendu": [
+    "loi-1965 art. 25"
+   ],
+   "rang": 7,
+   "top3": [
+    "loi-1965 art. 25-2-1",
+    "loi-1965 art. 24-9",
+    "loi-1965 art. 24"
+   ],
+   "meilleure_similarite": 0.6654,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quelle majorité faut-il pour voter des travaux d'économies d'énergie ?",
+   "attendu": [
+    "loi-1965 art. 25",
+    "loi-1965 art. 25-1"
+   ],
+   "rang": 4,
+   "top3": [
+    "loi-1965 art. 14-2-1",
+    "loi-1965 art. 24-4",
+    "loi-1965 art. 24"
+   ],
+   "meilleure_similarite": 0.6677,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Si une résolution n'obtient pas la majorité absolue mais au moins un tiers des voix, que se passe-t-il ?",
+   "attendu": [
+    "loi-1965 art. 25-1",
+    "decret-1967 art. 19"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 25-1",
+    "loi-1965 art. 26-1",
+    "loi-1965 art. 26"
+   ],
+   "meilleure_similarite": 0.6252,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "J'ai besoin d'un monte-escalier pour mon fauteuil roulant dans les parties communes : l'assemblée peut-elle refuser ?",
+   "attendu": [
+    "loi-1965 art. 25-2",
+    "loi-1965 art. 24",
+    "decret-1967 art. 10-2",
+    "decret-1967 art. 10-3"
+   ],
+   "rang": 3,
+   "top3": [
+    "loi-1965 art. 25-2-1",
+    "loi-1965 art. 26",
+    "loi-1965 art. 24"
+   ],
+   "meilleure_similarite": 0.5677,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "La copropriété peut-elle souscrire un prêt bancaire pour financer des travaux votés ?",
+   "attendu": [
+    "loi-1965 art. 26-4"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 26-4",
+    "loi-1965 art. 26-7",
+    "loi-1965 art. 26-9"
+   ],
+   "meilleure_similarite": 0.7205,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Dans une résidence de plusieurs bâtiments, un bâtiment peut-il avoir sa propre gestion ?",
+   "attendu": [
+    "loi-1965 art. 27"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 27",
+    "loi-1965 art. 28",
+    "loi-1965 art. 1"
+   ],
+   "meilleure_similarite": 0.588,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le propriétaire d'un bâtiment entier peut-il le faire sortir de la copropriété ?",
+   "attendu": [
+    "loi-1965 art. 28"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 28",
+    "loi-1965 art. 38",
+    "loi-1965 art. 46-1"
+   ],
+   "meilleure_similarite": 0.6666,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quand le juge peut-il nommer un mandataire pour une copropriété qui a trop d'impayés ?",
+   "attendu": [
+    "loi-1965 art. 29-1 A",
+    "loi-1965 art. 29-1 B"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 29-1 C",
+    "loi-1965 art. 29-1 A",
+    "loi-1965 art. 29-1 B"
+   ],
+   "meilleure_similarite": 0.6893,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Pour transformer un équipement existant ou aménager un nouveau local commun, quelle majorité faut-il ?",
+   "attendu": [
+    "loi-1965 art. 30"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 30",
+    "decret-1967 art. Annexe 1",
+    "loi-1965 art. 35"
+   ],
+   "meilleure_similarite": 0.6333,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Peut-on construire un étage supplémentaire sur l'immeuble pour créer de nouveaux appartements ?",
+   "attendu": [
+    "loi-1965 art. 35"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 35",
+    "loi-1965 art. 30",
+    "loi-1965 art. 28"
+   ],
+   "meilleure_similarite": 0.6088,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Après un incendie qui a détruit une partie du bâtiment, qui décide de la reconstruction ?",
+   "attendu": [
+    "loi-1965 art. 38"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 38",
+    "loi-1965 art. 40",
+    "loi-1965 art. 41"
+   ],
+   "meilleure_similarite": 0.6376,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic peut-il m'envoyer les convocations par e-mail, et puis-je demander à les recevoir par courrier ?",
+   "attendu": [
+    "loi-1965 art. 42-1",
+    "decret-1967 art. 64",
+    "decret-1967 art. 64-1",
+    "decret-1967 art. 64-2"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 42-1",
+    "decret-1967 art. 64-2",
+    "decret-1967 art. 9 bis"
+   ],
+   "meilleure_similarite": 0.6594,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "La surface de l'appartement doit-elle figurer dans le compromis de vente ?",
+   "attendu": [
+    "loi-1965 art. 46",
+    "decret-1967 art. 4-1"
+   ],
+   "rang": 3,
+   "top3": [
+    "decret-1967 art. 4-3",
+    "decret-1967 art. 4-2",
+    "loi-1965 art. 46"
+   ],
+   "meilleure_similarite": 0.6085,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Comment se calcule la surface privative indiquée dans l'acte de vente ?",
+   "attendu": [
+    "decret-1967 art. 4-1",
+    "loi-1965 art. 46"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 46",
+    "decret-1967 art. 4-3",
+    "decret-1967 art. 4-1"
+   ],
+   "meilleure_similarite": 0.6425,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Que devient la copropriété si une seule personne achète tous les lots ?",
+   "attendu": [
+    "loi-1965 art. 46-1"
+   ],
+   "rang": 1,
+   "top3": [
+    "loi-1965 art. 46-1",
+    "loi-1965 art. 17-2",
+    "loi-1965 art. 1"
+   ],
+   "meilleure_similarite": 0.6094,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qui doit prévenir le syndic quand un appartement est vendu ?",
+   "attendu": [
+    "decret-1967 art. 6",
+    "loi-1965 art. 20"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 8-1",
+    "loi-1965 art. 20",
+    "loi-1965 art. 18-1-1"
+   ],
+   "meilleure_similarite": 0.6498,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Lors de la vente d'un lot, qui paie l'appel de provisions du trimestre : le vendeur ou l'acheteur ?",
+   "attendu": [
+    "decret-1967 art. 6-2"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 6-2",
+    "decret-1967 art. 5",
+    "loi-1965 art. 20"
+   ],
+   "meilleure_similarite": 0.5689,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "À quelle fréquence l'assemblée générale doit-elle se réunir ?",
+   "attendu": [
+    "decret-1967 art. 7"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 7",
+    "loi-1965 art. 14-1",
+    "decret-1967 art. 9-1"
+   ],
+   "meilleure_similarite": 0.6088,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "L'assemblée peut-elle voter sur un point qui n'était pas à l'ordre du jour ?",
+   "attendu": [
+    "decret-1967 art. 13"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 13",
+    "decret-1967 art. 10",
+    "decret-1967 art. 19"
+   ],
+   "meilleure_similarite": 0.5661,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Je veux participer à l'assemblée par visioconférence : dois-je prévenir quelqu'un avant ?",
+   "attendu": [
+    "decret-1967 art. 13-2",
+    "loi-1965 art. 17-1 A"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 13-2",
+    "loi-1965 art. 17-1 A",
+    "decret-1967 art. 13-1"
+   ],
+   "meilleure_similarite": 0.6461,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qui préside la séance de l'assemblée générale et qui en tient le secrétariat ?",
+   "attendu": [
+    "decret-1967 art. 15"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 15",
+    "decret-1967 art. 17",
+    "decret-1967 art. 50"
+   ],
+   "meilleure_similarite": 0.6333,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qui signe le procès-verbal de l'assemblée et dans quel délai ?",
+   "attendu": [
+    "decret-1967 art. 17"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 17",
+    "loi-1965 art. 29-1 B",
+    "decret-1967 art. 18"
+   ],
+   "meilleure_similarite": 0.6458,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Les membres du conseil syndical sont-ils payés ?",
+   "attendu": [
+    "decret-1967 art. 27"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 27",
+    "decret-1967 art. Annexe 1",
+    "loi-1965 art. 21"
+   ],
+   "meilleure_similarite": 0.6838,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qui embauche et licencie le gardien de l'immeuble ?",
+   "attendu": [
+    "decret-1967 art. 31"
+   ],
+   "rang": 2,
+   "top3": [
+    "loi-1965 art. 26",
+    "decret-1967 art. 31",
+    "decret-1967 art. 67"
+   ],
+   "meilleure_similarite": 0.5054,
+   "je_ne_sais_pas": true
+  },
+  {
+   "question": "Le syndic peut-il réclamer une avance de trésorerie, et dans quelle limite ?",
+   "attendu": [
+    "decret-1967 art. 35"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 35",
+    "decret-1967 art. 5",
+    "loi-1965 art. 20"
+   ],
+   "meilleure_similarite": 0.7256,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "En cas de fuite grave, le syndic peut-il lancer des travaux sans attendre l'assemblée ?",
+   "attendu": [
+    "decret-1967 art. 37",
+    "loi-1965 art. 18"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 37",
+    "decret-1967 art. 55",
+    "loi-1965 art. 18"
+   ],
+   "meilleure_similarite": 0.6888,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic peut-il confier des travaux à une entreprise qui appartient à un membre de sa famille ?",
+   "attendu": [
+    "decret-1967 art. 39"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 39",
+    "loi-1965 art. 41-6",
+    "decret-1967 art. 42"
+   ],
+   "meilleure_similarite": 0.6263,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Qu'appelle-t-on des travaux de maintenance dans les comptes de la copropriété ?",
+   "attendu": [
+    "decret-1967 art. 45",
+    "decret-1967 art. 44"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 45",
+    "decret-1967 art. 44",
+    "decret-1967 art. Annexe 1"
+   ],
+   "meilleure_similarite": 0.7035,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Que se passe-t-il si l'assemblée n'arrive pas à nommer de syndic ?",
+   "attendu": [
+    "decret-1967 art. 46",
+    "decret-1967 art. 47"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 46",
+    "loi-1965 art. 17",
+    "loi-1965 art. 41-11"
+   ],
+   "meilleure_similarite": 0.6395,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic peut-il attaquer quelqu'un en justice au nom de la copropriété sans l'accord de l'assemblée ?",
+   "attendu": [
+    "decret-1967 art. 55"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 55",
+    "loi-1965 art. 15",
+    "loi-1965 art. 17"
+   ],
+   "meilleure_similarite": 0.7268,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Quel tribunal est compétent pour un litige de copropriété ?",
+   "attendu": [
+    "decret-1967 art. 61-1"
+   ],
+   "rang": null,
+   "top3": [
+    "decret-1967 art. 42-10",
+    "decret-1967 art. 49-1",
+    "loi-1965 art. 17"
+   ],
+   "meilleure_similarite": 0.5922,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Le syndic doit-il tenir une liste de tous les copropriétaires avec leurs coordonnées ?",
+   "attendu": [
+    "decret-1967 art. 32"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 32",
+    "loi-1965 art. 18-2",
+    "loi-1965 art. 18"
+   ],
+   "meilleure_similarite": 0.7483,
+   "je_ne_sais_pas": false
+  },
+  {
+   "question": "Puis-je obtenir une copie du carnet d'entretien de l'immeuble ?",
+   "attendu": [
+    "decret-1967 art. 33"
+   ],
+   "rang": 1,
+   "top3": [
+    "decret-1967 art. 33",
+    "loi-1965 art. 21",
+    "loi-1965 art. 18"
+   ],
+   "meilleure_similarite": 0.6011,
+   "je_ne_sais_pas": false
+  }
+ ],
+ "secondes_par_question": 1.27,
+ "hors_sujet": [
+  {
+   "question": "Quel est le montant maximum du dépôt de garantie pour une location vide ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.4612
+  },
+  {
+   "question": "Comment calculer la taxe foncière d'un appartement ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.5342
+  },
+  {
+   "question": "Combien de temps dure la garantie décennale d'un constructeur ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.4721
+  },
+  {
+   "question": "Comment résilier mon contrat d'assurance habitation ?",
+   "je_ne_sais_pas": false,
+   "meilleure_similarite": 0.5887
+  },
+  {
+   "question": "Quelles aides existe-t-il pour rénover une maison individuelle ?",
+   "je_ne_sais_pas": false,
+   "meilleure_similarite": 0.5759
+  },
+  {
+   "question": "Quel est le taux d'intérêt d'un prêt immobilier sur vingt ans ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.4879
+  },
+  {
+   "question": "Comment contester une amende de stationnement ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.5372
+  },
+  {
+   "question": "Quel est le délai de rétractation après un achat en ligne ?",
+   "je_ne_sais_pas": false,
+   "meilleure_similarite": 0.5533
+  },
+  {
+   "question": "Comment rédiger un testament valable ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.4634
+  },
+  {
+   "question": "Mon employeur peut-il refuser mes congés d'été ?",
+   "je_ne_sais_pas": true,
+   "meilleure_similarite": 0.5017
+  }
+ ],
+ "refus_hors_sujet": 0.7,
+ "refus_a_tort": 0.019
+}

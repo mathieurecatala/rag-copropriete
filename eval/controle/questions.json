@@ -1,0 +1,585 @@
+{
+ "note": "Jeu de contrôle, mis à part : questions écrites par une IA (Claude) à partir du texte des articles du corpus, pas par un juriste, le 12/10/2026, avant toute modification de la recherche. Il ne sert qu'à mesurer : aucun réglage (poids, seuil, lexique, modèle) ne doit être choisi en le regardant. Les questions évitent les mots exacts des articles quand c'est possible ; plusieurs articles sont acceptés quand ils répondent tous.",
+ "questions": [
+  {
+   "question": "Quelles parties de l'immeuble appartiennent à un seul copropriétaire ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "2"
+    }
+   ]
+  },
+  {
+   "question": "À qui appartient la cloison qui sépare mon appartement de celui du voisin ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "7"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic doit-il fournir un document qui résume les chiffres et l'état technique de la copropriété ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "8-2"
+    }
+   ]
+  },
+  {
+   "question": "Suis-je obligé d'avoir une assurance responsabilité civile quand je loue mon appartement sans y habiter ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "9-1"
+    }
+   ]
+  },
+  {
+   "question": "Je loue mon logement en meublé de tourisme : dois-je prévenir le syndic ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "9-2"
+    }
+   ]
+  },
+  {
+   "question": "Qui paie les frais de relance et d'huissier quand un copropriétaire est en retard de paiement ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "10-1"
+    }
+   ]
+  },
+  {
+   "question": "Peut-on changer la façon dont les charges sont réparties entre les lots ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "11"
+    }
+   ]
+  },
+  {
+   "question": "Ma quote-part de charges me paraît beaucoup trop élevée par rapport à mon lot : puis-je la faire réviser par un juge ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "12"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "52"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "53"
+    }
+   ]
+  },
+  {
+   "question": "Notre immeuble a vingt ans : faut-il établir un programme de travaux sur plusieurs années ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "14-2"
+    }
+   ]
+  },
+  {
+   "question": "Je veux faire voter une question qui ne concerne que mon lot sans attendre la prochaine assemblée : est-ce possible ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "17-1 AA"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "8-1"
+    }
+   ]
+  },
+  {
+   "question": "Une personne qui n'est pas propriétaire dans l'immeuble peut-elle être syndic bénévole ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "17-2"
+    }
+   ]
+  },
+  {
+   "question": "Avant l'assemblée qui approuve les comptes, puis-je consulter les factures ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "18-1"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "9-1"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic peut-il facturer des honoraires en plus de son forfait annuel ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "18-1 A"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "Annexe 2"
+    }
+   ]
+  },
+  {
+   "question": "Quand nous changeons de syndic, en combien de temps l'ancien doit-il transmettre les comptes et les archives ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "18-2"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "33-1"
+    }
+   ]
+  },
+  {
+   "question": "Lors de la vente d'un appartement, comment le syndic récupère-t-il les charges impayées du vendeur ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "20"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "5-1"
+    }
+   ]
+  },
+  {
+   "question": "L'assemblée peut-elle confier au conseil syndical le pouvoir de prendre certaines décisions à sa place ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "21-1"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "21-3"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "21-1"
+    }
+   ]
+  },
+  {
+   "question": "Pour combien de temps une délégation de pouvoirs au conseil syndical est-elle accordée ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "21-3"
+    }
+   ]
+  },
+  {
+   "question": "Quelle majorité suffit pour les décisions ordinaires de l'assemblée générale ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "24"
+    }
+   ]
+  },
+  {
+   "question": "Comment sont élus les membres du conseil syndical ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25"
+    }
+   ]
+  },
+  {
+   "question": "Un copropriétaire peut-il installer à ses frais un climatiseur sur la façade de l'immeuble, et quel vote faut-il ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25"
+    }
+   ]
+  },
+  {
+   "question": "Quelle majorité faut-il pour voter des travaux d'économies d'énergie ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "25-1"
+    }
+   ]
+  },
+  {
+   "question": "Si une résolution n'obtient pas la majorité absolue mais au moins un tiers des voix, que se passe-t-il ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25-1"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "19"
+    }
+   ]
+  },
+  {
+   "question": "J'ai besoin d'un monte-escalier pour mon fauteuil roulant dans les parties communes : l'assemblée peut-elle refuser ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "25-2"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "24"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "10-2"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "10-3"
+    }
+   ]
+  },
+  {
+   "question": "La copropriété peut-elle souscrire un prêt bancaire pour financer des travaux votés ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "26-4"
+    }
+   ]
+  },
+  {
+   "question": "Dans une résidence de plusieurs bâtiments, un bâtiment peut-il avoir sa propre gestion ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "27"
+    }
+   ]
+  },
+  {
+   "question": "Le propriétaire d'un bâtiment entier peut-il le faire sortir de la copropriété ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "28"
+    }
+   ]
+  },
+  {
+   "question": "Quand le juge peut-il nommer un mandataire pour une copropriété qui a trop d'impayés ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "29-1 A"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "29-1 B"
+    }
+   ]
+  },
+  {
+   "question": "Pour transformer un équipement existant ou aménager un nouveau local commun, quelle majorité faut-il ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "30"
+    }
+   ]
+  },
+  {
+   "question": "Peut-on construire un étage supplémentaire sur l'immeuble pour créer de nouveaux appartements ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "35"
+    }
+   ]
+  },
+  {
+   "question": "Après un incendie qui a détruit une partie du bâtiment, qui décide de la reconstruction ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "38"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic peut-il m'envoyer les convocations par e-mail, et puis-je demander à les recevoir par courrier ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "42-1"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "64"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "64-1"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "64-2"
+    }
+   ]
+  },
+  {
+   "question": "La surface de l'appartement doit-elle figurer dans le compromis de vente ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "46"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "4-1"
+    }
+   ]
+  },
+  {
+   "question": "Comment se calcule la surface privative indiquée dans l'acte de vente ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "4-1"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "46"
+    }
+   ]
+  },
+  {
+   "question": "Que devient la copropriété si une seule personne achète tous les lots ?",
+   "attendu": [
+    {
+     "texte": "loi-1965",
+     "article": "46-1"
+    }
+   ]
+  },
+  {
+   "question": "Qui doit prévenir le syndic quand un appartement est vendu ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "6"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "20"
+    }
+   ]
+  },
+  {
+   "question": "Lors de la vente d'un lot, qui paie l'appel de provisions du trimestre : le vendeur ou l'acheteur ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "6-2"
+    }
+   ]
+  },
+  {
+   "question": "À quelle fréquence l'assemblée générale doit-elle se réunir ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "7"
+    }
+   ]
+  },
+  {
+   "question": "L'assemblée peut-elle voter sur un point qui n'était pas à l'ordre du jour ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "13"
+    }
+   ]
+  },
+  {
+   "question": "Je veux participer à l'assemblée par visioconférence : dois-je prévenir quelqu'un avant ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "13-2"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "17-1 A"
+    }
+   ]
+  },
+  {
+   "question": "Qui préside la séance de l'assemblée générale et qui en tient le secrétariat ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "15"
+    }
+   ]
+  },
+  {
+   "question": "Qui signe le procès-verbal de l'assemblée et dans quel délai ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "17"
+    }
+   ]
+  },
+  {
+   "question": "Les membres du conseil syndical sont-ils payés ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "27"
+    }
+   ]
+  },
+  {
+   "question": "Qui embauche et licencie le gardien de l'immeuble ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "31"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic peut-il réclamer une avance de trésorerie, et dans quelle limite ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "35"
+    }
+   ]
+  },
+  {
+   "question": "En cas de fuite grave, le syndic peut-il lancer des travaux sans attendre l'assemblée ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "37"
+    },
+    {
+     "texte": "loi-1965",
+     "article": "18"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic peut-il confier des travaux à une entreprise qui appartient à un membre de sa famille ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "39"
+    }
+   ]
+  },
+  {
+   "question": "Qu'appelle-t-on des travaux de maintenance dans les comptes de la copropriété ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "45"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "44"
+    }
+   ]
+  },
+  {
+   "question": "Que se passe-t-il si l'assemblée n'arrive pas à nommer de syndic ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "46"
+    },
+    {
+     "texte": "decret-1967",
+     "article": "47"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic peut-il attaquer quelqu'un en justice au nom de la copropriété sans l'accord de l'assemblée ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "55"
+    }
+   ]
+  },
+  {
+   "question": "Quel tribunal est compétent pour un litige de copropriété ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "61-1"
+    }
+   ]
+  },
+  {
+   "question": "Le syndic doit-il tenir une liste de tous les copropriétaires avec leurs coordonnées ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "32"
+    }
+   ]
+  },
+  {
+   "question": "Puis-je obtenir une copie du carnet d'entretien de l'immeuble ?",
+   "attendu": [
+    {
+     "texte": "decret-1967",
+     "article": "33"
+    }
+   ]
+  }
+ ],
+ "hors_sujet": [
+  "Quel est le montant maximum du dépôt de garantie pour une location vide ?",
+  "Comment calculer la taxe foncière d'un appartement ?",
+  "Combien de temps dure la garantie décennale d'un constructeur ?",
+  "Comment résilier mon contrat d'assurance habitation ?",
+  "Quelles aides existe-t-il pour rénover une maison individuelle ?",
+  "Quel est le taux d'intérêt d'un prêt immobilier sur vingt ans ?",
+  "Comment contester une amende de stationnement ?",
+  "Quel est le délai de rétractation après un achat en ligne ?",
+  "Comment rédiger un testament valable ?",
+  "Mon employeur peut-il refuser mes congés d'été ?"
+ ]
+}
